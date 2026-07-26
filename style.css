@@ -1,0 +1,694 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f5f7fb;
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#2563eb;
+    color:white;
+    padding:15px 60px;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-size:18px;
+}
+
+nav a:hover{
+    text-decoration:underline;
+}
+
+.hero{
+    height:85vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:50px;
+    margin-bottom:20px;
+    color:#1e3a8a;
+}
+
+.hero p{
+    font-size:20px;
+    color:#555;
+    margin-bottom:35px;
+}
+
+.buttons{
+    display:flex;
+    gap:20px;
+}
+
+.btn{
+    background:#2563eb;
+    color:white;
+    text-decoration:none;
+    padding:12px 30px;
+    border-radius:8px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#1d4ed8;
+}
+
+.btn-outline{
+    background:white;
+    color:#2563eb;
+    border:2px solid #2563eb;
+}
+
+.btn-outline:hover{
+    background:#2563eb;
+    color:white;
+}
+
+footer{
+    background:#2563eb;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+/* Register & Login Form */
+
+.form-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:80vh;
+    background:#f5f7fb;
+}
+
+.form-box{
+    width:400px;
+    background:#fff;
+    padding:35px;
+    border-radius:10px;
+    box-shadow:0 0 15px rgba(0,0,0,0.1);
+}
+
+.form-box h2{
+    text-align:center;
+    margin-bottom:25px;
+    color:#2563eb;
+}
+
+.form-box label{
+    display:block;
+    margin-top:15px;
+    margin-bottom:6px;
+    font-weight:bold;
+}
+
+.form-box input{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    font-size:16px;
+}
+
+.form-box input:focus{
+    outline:none;
+    border-color:#2563eb;
+}
+
+.form-box button{
+    width:100%;
+    margin-top:25px;
+    padding:12px;
+    background:#2563eb;
+    color:#fff;
+    border:none;
+    border-radius:6px;
+    font-size:17px;
+    cursor:pointer;
+}
+
+.form-box button:hover{
+    background:#1d4ed8;
+}
+
+.link{
+    text-align:center;
+    margin-top:20px;
+}
+
+.link a{
+    color:#2563eb;
+    text-decoration:none;
+}
+
+.link a:hover{
+    text-decoration:underline;
+}
+/* Dashboard */
+
+.container{
+    display:flex;
+    min-height:80vh;
+}
+
+.sidebar{
+    width:220px;
+    background:#1e3a8a;
+    padding:20px;
+}
+
+.sidebar h2{
+    color:white;
+    margin-bottom:20px;
+}
+
+.sidebar a{
+    display:block;
+    color:white;
+    text-decoration:none;
+    padding:12px;
+    margin-bottom:10px;
+    border-radius:5px;
+}
+
+.sidebar a:hover{
+    background:#2563eb;
+}
+
+.content{
+    flex:1;
+    padding:40px;
+}
+
+.content h1{
+    margin-bottom:20px;
+    color:#1e3a8a;
+}
+
+.add-btn{
+    display:inline-block;
+    background:#16a34a;
+    color:white;
+    padding:10px 20px;
+    text-decoration:none;
+    border-radius:5px;
+    margin-bottom:20px;
+}
+
+.add-btn:hover{
+    background:#15803d;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+    box-shadow:0 0 10px rgba(0,0,0,.1);
+}
+
+table th,
+table td{
+    border:1px solid #ddd;
+    padding:15px;
+    text-align:center;
+}
+
+table th{
+    background:#2563eb;
+    color:white;
+}
+
+.edit{
+    color:#2563eb;
+    text-decoration:none;
+    margin-right:10px;
+    font-weight:bold;
+}
+
+.delete{
+    color:red;
+    text-decoration:none;
+    font-weight:bold;
+}
+/* Add Note Page */
+
+.note-form{
+    background:white;
+    width:700px;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,.1);
+}
+
+.note-form h2{
+    color:#1e3a8a;
+    margin-bottom:25px;
+}
+
+.note-form label{
+    display:block;
+    margin-top:15px;
+    margin-bottom:8px;
+    font-weight:bold;
+}
+
+.note-form input,
+.note-form textarea{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    font-size:16px;
+}
+
+.note-form textarea{
+    resize:none;
+}
+
+.buttons{
+    margin-top:25px;
+}
+
+.save-btn{
+    background:#16a34a;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:6px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.save-btn:hover{
+    background:#15803d;
+}
+
+.cancel-btn{
+    background:#dc2626;
+    color:white;
+    padding:12px 25px;
+    text-decoration:none;
+    border-radius:6px;
+    margin-left:15px;
+}
+
+.cancel-btn:hover{
+    background:#b91c1c;
+}
+
+/* ===========================
+   CloudNotes - style.css
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+}
+
+/* Header */
+
+header{
+    background:#2563eb;
+    color:#fff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 60px;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav a{
+    color:#fff;
+    text-decoration:none;
+    margin-left:20px;
+    font-size:17px;
+}
+
+nav a:hover{
+    color:#ffd700;
+}
+
+/* Hero Section */
+
+.hero{
+    height:85vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:48px;
+    color:#1e3a8a;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:20px;
+    color:#555;
+    margin-bottom:35px;
+}
+
+.btn{
+    display:inline-block;
+    background:#2563eb;
+    color:white;
+    text-decoration:none;
+    padding:12px 28px;
+    border-radius:6px;
+    margin:10px;
+}
+
+.btn:hover{
+    background:#1d4ed8;
+}
+
+.btn-outline{
+    background:white;
+    color:#2563eb;
+    border:2px solid #2563eb;
+}
+
+.btn-outline:hover{
+    background:#2563eb;
+    color:white;
+}
+
+/* Register & Login */
+
+.form-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:85vh;
+}
+
+.form-box{
+    width:420px;
+    background:white;
+    padding:35px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+.form-box h2{
+    text-align:center;
+    color:#2563eb;
+    margin-bottom:25px;
+}
+
+.form-box label{
+    display:block;
+    margin-top:15px;
+    margin-bottom:8px;
+    font-weight:bold;
+}
+
+.form-box input{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+.form-box input:focus{
+    outline:none;
+    border:1px solid #2563eb;
+}
+
+.form-box button{
+    width:100%;
+    margin-top:25px;
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:12px;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:17px;
+}
+
+.form-box button:hover{
+    background:#1d4ed8;
+}
+
+.link{
+    text-align:center;
+    margin-top:20px;
+}
+
+.link a{
+    color:#2563eb;
+    text-decoration:none;
+}
+
+/* Dashboard */
+
+.container{
+    display:flex;
+    min-height:85vh;
+}
+
+/* Sidebar */
+
+.sidebar{
+    width:240px;
+    background:#1e3a8a;
+    padding:25px;
+}
+
+.sidebar h2{
+    color:white;
+    margin-bottom:25px;
+}
+
+.sidebar a{
+    display:block;
+    color:white;
+    text-decoration:none;
+    padding:12px;
+    margin-bottom:12px;
+    border-radius:6px;
+    transition:.3s;
+}
+
+.sidebar a:hover{
+    background:#2563eb;
+}
+
+/* Main Content */
+
+.content{
+    flex:1;
+    padding:35px;
+}
+
+.content h1,
+.content h2{
+    color:#1e3a8a;
+    margin-bottom:20px;
+}
+
+/* Add Button */
+
+.add-btn{
+    display:inline-block;
+    background:#16a34a;
+    color:white;
+    text-decoration:none;
+    padding:12px 22px;
+    border-radius:6px;
+    margin-bottom:25px;
+}
+
+.add-btn:hover{
+    background:#15803d;
+}
+
+/* Table */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+table th{
+    background:#2563eb;
+    color:white;
+    padding:15px;
+}
+
+table td{
+    padding:15px;
+    text-align:center;
+    border-bottom:1px solid #ddd;
+}
+
+table tr:hover{
+    background:#f8f8f8;
+}
+
+.edit{
+    color:#2563eb;
+    text-decoration:none;
+    font-weight:bold;
+    margin-right:10px;
+}
+
+.delete{
+    color:red;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+/* Forms */
+
+.note-form{
+    width:700px;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.note-form label{
+    display:block;
+    margin-top:15px;
+    margin-bottom:8px;
+    font-weight:bold;
+}
+
+.note-form input,
+.note-form textarea{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    font-size:16px;
+}
+
+.note-form textarea{
+    resize:vertical;
+}
+
+.note-form input:focus,
+.note-form textarea:focus{
+    outline:none;
+    border:1px solid #2563eb;
+}
+
+/* Buttons */
+
+.buttons{
+    margin-top:25px;
+}
+
+.save-btn{
+    background:#16a34a;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:6px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.save-btn:hover{
+    background:#15803d;
+}
+
+.cancel-btn{
+    display:inline-block;
+    margin-left:10px;
+    background:#dc2626;
+    color:white;
+    text-decoration:none;
+    padding:12px 25px;
+    border-radius:6px;
+}
+
+.cancel-btn:hover{
+    background:#b91c1c;
+}
+
+/* Footer */
+
+footer{
+    background:#2563eb;
+    color:white;
+    text-align:center;
+    padding:18px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+header{
+    flex-direction:column;
+    text-align:center;
+    padding:20px;
+}
+
+nav{
+    margin-top:15px;
+}
+
+.container{
+    flex-direction:column;
+}
+
+.sidebar{
+    width:100%;
+}
+
+.note-form{
+    width:100%;
+}
+
+.form-box{
+    width:90%;
+}
+
+table{
+    font-size:14px;
+}
+
+.hero h1{
+    font-size:35px;
+}
+
+}
